@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA10E2AF24680E8F00AA261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10E2AE24680E8F00AA261D /* Assets.xcassets */; };
+		AA10E2B024680E8F00AA261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10E2AE24680E8F00AA261D /* Assets.xcassets */; };
+		AA10E2B124680E8F00AA261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA10E2AE24680E8F00AA261D /* Assets.xcassets */; };
+		AA5364E02467AEA300CDDDEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5364DF2467AEA300CDDDEC /* AppDelegate.swift */; };
+		AA5364E22467AEA300CDDDEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5364E12467AEA300CDDDEC /* SceneDelegate.swift */; };
+		AA5364E42467AEA300CDDDEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5364E32467AEA300CDDDEC /* ContentView.swift */; };
+		AA5364E92467AEA400CDDDEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5364E82467AEA400CDDDEC /* Preview Assets.xcassets */; };
+		AA5364EC2467AEA400CDDDEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5364EA2467AEA400CDDDEC /* LaunchScreen.storyboard */; };
+		AA5364F72467AEA400CDDDEC /* JuicinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5364F62467AEA400CDDDEC /* JuicinTests.swift */; };
+		AA5365022467AEA400CDDDEC /* JuicinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365012467AEA400CDDDEC /* JuicinUITests.swift */; };
+		AA5365072467AEA400CDDDEC /* Juicin'.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AA5365062467AEA400CDDDEC /* Juicin'.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA5365162467AEA500CDDDEC /* Juicin'.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA5365152467AEA500CDDDEC /* Juicin'.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA53651F2467AEA500CDDDEC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53651E2467AEA500CDDDEC /* ExtensionDelegate.swift */; };
+		AA5365212467AEA500CDDDEC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365202467AEA500CDDDEC /* NotificationController.swift */; };
+		AA5365232467AEA500CDDDEC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365222467AEA500CDDDEC /* NotificationView.swift */; };
+		AA5365252467AEA500CDDDEC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365242467AEA500CDDDEC /* ComplicationController.swift */; };
+		AA53652A2467AEA500CDDDEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5365292467AEA500CDDDEC /* Preview Assets.xcassets */; };
+		AA5365432467AED900CDDDEC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5365422467AED900CDDDEC /* CloudKit.framework */; };
+		AA5365462467AEF500CDDDEC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5365452467AEF500CDDDEC /* CloudKit.framework */; };
+		AA5365822467AFF900CDDDEC /* ProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* ProduceRow.swift */; };
+		AA5365832467AFF900CDDDEC /* ProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* ProduceRow.swift */; };
+		AA5365842467AFF900CDDDEC /* JuiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365742467AFF800CDDDEC /* JuiceView.swift */; };
+		AA5365862467AFF900CDDDEC /* JuiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365752467AFF800CDDDEC /* JuiceListView.swift */; };
+		AA5365872467AFF900CDDDEC /* JuiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365752467AFF800CDDDEC /* JuiceListView.swift */; };
+		AA5365882467AFF900CDDDEC /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365772467AFF800CDDDEC /* ShoppingListView.swift */; };
+		AA5365892467AFF900CDDDEC /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365772467AFF800CDDDEC /* ShoppingListView.swift */; };
+		AA53658A2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365782467AFF800CDDDEC /* ShoppingListItemRow.swift */; };
+		AA53658B2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365782467AFF800CDDDEC /* ShoppingListItemRow.swift */; };
+		AA53658C2467AFF900CDDDEC /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657B2467AFF800CDDDEC /* AdaptsToKeyboard.swift */; };
+		AA53658E2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */; };
+		AA53658F2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */; };
+		AA5365902467AFF900CDDDEC /* Produce.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657E2467AFF800CDDDEC /* Produce.swift */; };
+		AA5365912467AFF900CDDDEC /* Produce.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657E2467AFF800CDDDEC /* Produce.swift */; };
+		AA5365922467AFF900CDDDEC /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657F2467AFF800CDDDEC /* Juice.swift */; };
+		AA5365932467AFF900CDDDEC /* Juice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53657F2467AFF800CDDDEC /* Juice.swift */; };
+		AA5365942467AFF900CDDDEC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */; };
+		AA5365952467AFF900CDDDEC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */; };
+		AA5365972467B00500CDDDEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365962467B00400CDDDEC /* Extensions.swift */; };
+		AA53659B2467B01400CDDDEC /* JuiceListHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */; };
+		AA53659D2467B02B00CDDDEC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53659C2467B02B00CDDDEC /* Interface.storyboard */; };
+		AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365742467AFF800CDDDEC /* JuiceView.swift */; };
+		AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365962467B00400CDDDEC /* Extensions.swift */; };
+		AAE3675D2467E8B300E48E20 /* ListButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA5364F32467AEA400CDDDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5364D42467AEA300CDDDEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5364DB2467AEA300CDDDEC;
+			remoteInfo = Juicin;
+		};
+		AA5364FE2467AEA400CDDDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5364D42467AEA300CDDDEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5364DB2467AEA300CDDDEC;
+			remoteInfo = Juicin;
+		};
+		AA5365082467AEA400CDDDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5364D42467AEA300CDDDEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5365052467AEA400CDDDEC;
+			remoteInfo = "Juicin WatchKit App";
+		};
+		AA5365172467AEA500CDDDEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA5364D42467AEA300CDDDEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA5365142467AEA500CDDDEC;
+			remoteInfo = "Juicin WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA5365322467AEA600CDDDEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA5365162467AEA500CDDDEC /* Juicin'.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5365362467AEA600CDDDEC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AA5365072467AEA400CDDDEC /* Juicin'.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA10E2AE24680E8F00AA261D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5364DC2467AEA300CDDDEC /* Juicin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Juicin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5364DF2467AEA300CDDDEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5364E12467AEA300CDDDEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA5364E32467AEA300CDDDEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA5364E82467AEA400CDDDEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA5364EB2467AEA400CDDDEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5364ED2467AEA400CDDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5364F22467AEA400CDDDEC /* JuicinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuicinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5364F62467AEA400CDDDEC /* JuicinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicinTests.swift; sourceTree = "<group>"; };
+		AA5364F82467AEA400CDDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5364FD2467AEA400CDDDEC /* JuicinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JuicinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5365012467AEA400CDDDEC /* JuicinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicinUITests.swift; sourceTree = "<group>"; };
+		AA5365032467AEA400CDDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5365062467AEA400CDDDEC /* Juicin'.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Juicin'.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5365102467AEA500CDDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5365152467AEA500CDDDEC /* Juicin'.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Juicin'.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53651E2467AEA500CDDDEC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AA5365202467AEA500CDDDEC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AA5365222467AEA500CDDDEC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AA5365242467AEA500CDDDEC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AA5365292467AEA500CDDDEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA53652B2467AEA500CDDDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA53652C2467AEA500CDDDEC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AA5365402467AED500CDDDEC /* Juicin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Juicin.entitlements; sourceTree = "<group>"; };
+		AA5365422467AED900CDDDEC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AA5365442467AEF200CDDDEC /* Juicin WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Juicin WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		AA5365452467AEF500CDDDEC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA5365732467AFF800CDDDEC /* ProduceRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceRow.swift; sourceTree = "<group>"; };
+		AA5365742467AFF800CDDDEC /* JuiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceView.swift; sourceTree = "<group>"; };
+		AA5365752467AFF800CDDDEC /* JuiceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceListView.swift; sourceTree = "<group>"; };
+		AA5365772467AFF800CDDDEC /* ShoppingListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		AA5365782467AFF800CDDDEC /* ShoppingListItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItemRow.swift; sourceTree = "<group>"; };
+		AA53657B2467AFF800CDDDEC /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
+		AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListItem.swift; sourceTree = "<group>"; };
+		AA53657E2467AFF800CDDDEC /* Produce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produce.swift; sourceTree = "<group>"; };
+		AA53657F2467AFF800CDDDEC /* Juice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Juice.swift; sourceTree = "<group>"; };
+		AA5365812467AFF800CDDDEC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		AA5365962467B00400CDDDEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceListHostingController.swift; sourceTree = "<group>"; };
+		AA53659C2467B02B00CDDDEC /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListButtonStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5364D92467AEA300CDDDEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5365432467AED900CDDDEC /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364EF2467AEA400CDDDEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364FA2467AEA400CDDDEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5365122467AEA500CDDDEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5365462467AEF500CDDDEC /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA5364D32467AEA300CDDDEC = {
+			isa = PBXGroup;
+			children = (
+				AA5364DE2467AEA300CDDDEC /* Juicin */,
+				AA5364F52467AEA400CDDDEC /* JuicinTests */,
+				AA5365002467AEA400CDDDEC /* JuicinUITests */,
+				AA53650A2467AEA400CDDDEC /* Juicin WatchKit App */,
+				AA5365192467AEA500CDDDEC /* Juicin WatchKit Extension */,
+				AA5364DD2467AEA300CDDDEC /* Products */,
+				AA5365412467AED900CDDDEC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5364DD2467AEA300CDDDEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5364DC2467AEA300CDDDEC /* Juicin'.app */,
+				AA5364F22467AEA400CDDDEC /* JuicinTests.xctest */,
+				AA5364FD2467AEA400CDDDEC /* JuicinUITests.xctest */,
+				AA5365062467AEA400CDDDEC /* Juicin'.app */,
+				AA5365152467AEA500CDDDEC /* Juicin'.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5364DE2467AEA300CDDDEC /* Juicin */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365402467AED500CDDDEC /* Juicin.entitlements */,
+				AA5364DF2467AEA300CDDDEC /* AppDelegate.swift */,
+				AA5364E12467AEA300CDDDEC /* SceneDelegate.swift */,
+				AA5364E32467AEA300CDDDEC /* ContentView.swift */,
+				AA53657C2467AFF800CDDDEC /* Model */,
+				AA5365712467AFF800CDDDEC /* View */,
+				AA5365962467B00400CDDDEC /* Extensions.swift */,
+				AA5364EA2467AEA400CDDDEC /* LaunchScreen.storyboard */,
+				AA10E2AE24680E8F00AA261D /* Assets.xcassets */,
+				AA5364ED2467AEA400CDDDEC /* Info.plist */,
+				AA5364E72467AEA400CDDDEC /* Preview Content */,
+			);
+			path = Juicin;
+			sourceTree = "<group>";
+		};
+		AA5364E72467AEA400CDDDEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA5364E82467AEA400CDDDEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA5364F52467AEA400CDDDEC /* JuicinTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5364F62467AEA400CDDDEC /* JuicinTests.swift */,
+				AA5364F82467AEA400CDDDEC /* Info.plist */,
+			);
+			path = JuicinTests;
+			sourceTree = "<group>";
+		};
+		AA5365002467AEA400CDDDEC /* JuicinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365012467AEA400CDDDEC /* JuicinUITests.swift */,
+				AA5365032467AEA400CDDDEC /* Info.plist */,
+			);
+			path = JuicinUITests;
+			sourceTree = "<group>";
+		};
+		AA53650A2467AEA400CDDDEC /* Juicin WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AA53659C2467B02B00CDDDEC /* Interface.storyboard */,
+				AA5365102467AEA500CDDDEC /* Info.plist */,
+			);
+			path = "Juicin WatchKit App";
+			sourceTree = "<group>";
+		};
+		AA5365192467AEA500CDDDEC /* Juicin WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365442467AEF200CDDDEC /* Juicin WatchKit Extension.entitlements */,
+				AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */,
+				AA53651E2467AEA500CDDDEC /* ExtensionDelegate.swift */,
+				AA5365202467AEA500CDDDEC /* NotificationController.swift */,
+				AA5365222467AEA500CDDDEC /* NotificationView.swift */,
+				AA5365242467AEA500CDDDEC /* ComplicationController.swift */,
+				AA53652B2467AEA500CDDDEC /* Info.plist */,
+				AA53652C2467AEA500CDDDEC /* PushNotificationPayload.apns */,
+				AA5365282467AEA500CDDDEC /* Preview Content */,
+			);
+			path = "Juicin WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AA5365282467AEA500CDDDEC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365292467AEA500CDDDEC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA5365412467AED900CDDDEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365452467AEF500CDDDEC /* CloudKit.framework */,
+				AA5365422467AED900CDDDEC /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5365712467AFF800CDDDEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365762467AFF800CDDDEC /* ShoppingList */,
+				AA5365722467AFF800CDDDEC /* Juice */,
+				AA53657A2467AFF800CDDDEC /* ViewModifiers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA5365722467AFF800CDDDEC /* Juice */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365752467AFF800CDDDEC /* JuiceListView.swift */,
+				AA5365742467AFF800CDDDEC /* JuiceView.swift */,
+				AA5365732467AFF800CDDDEC /* ProduceRow.swift */,
+			);
+			path = Juice;
+			sourceTree = "<group>";
+		};
+		AA5365762467AFF800CDDDEC /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				AA5365772467AFF800CDDDEC /* ShoppingListView.swift */,
+				AA5365782467AFF800CDDDEC /* ShoppingListItemRow.swift */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		AA53657A2467AFF800CDDDEC /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AA53657B2467AFF800CDDDEC /* AdaptsToKeyboard.swift */,
+				AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		AA53657C2467AFF800CDDDEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */,
+				AA53657E2467AFF800CDDDEC /* Produce.swift */,
+				AA53657F2467AFF800CDDDEC /* Juice.swift */,
+				AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5364DB2467AEA300CDDDEC /* Juicin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5365372467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin" */;
+			buildPhases = (
+				AA5364D82467AEA300CDDDEC /* Sources */,
+				AA5364D92467AEA300CDDDEC /* Frameworks */,
+				AA5364DA2467AEA300CDDDEC /* Resources */,
+				AA5365362467AEA600CDDDEC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5365092467AEA400CDDDEC /* PBXTargetDependency */,
+			);
+			name = Juicin;
+			productName = Juicin;
+			productReference = AA5364DC2467AEA300CDDDEC /* Juicin'.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA5364F12467AEA400CDDDEC /* JuicinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA53653A2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "JuicinTests" */;
+			buildPhases = (
+				AA5364EE2467AEA400CDDDEC /* Sources */,
+				AA5364EF2467AEA400CDDDEC /* Frameworks */,
+				AA5364F02467AEA400CDDDEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5364F42467AEA400CDDDEC /* PBXTargetDependency */,
+			);
+			name = JuicinTests;
+			productName = JuicinTests;
+			productReference = AA5364F22467AEA400CDDDEC /* JuicinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA5364FC2467AEA400CDDDEC /* JuicinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA53653D2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "JuicinUITests" */;
+			buildPhases = (
+				AA5364F92467AEA400CDDDEC /* Sources */,
+				AA5364FA2467AEA400CDDDEC /* Frameworks */,
+				AA5364FB2467AEA400CDDDEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5364FF2467AEA400CDDDEC /* PBXTargetDependency */,
+			);
+			name = JuicinUITests;
+			productName = JuicinUITests;
+			productReference = AA5364FD2467AEA400CDDDEC /* JuicinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AA5365052467AEA400CDDDEC /* Juicin WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5365332467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin WatchKit App" */;
+			buildPhases = (
+				AA5365042467AEA400CDDDEC /* Resources */,
+				AA5365322467AEA600CDDDEC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA5365182467AEA500CDDDEC /* PBXTargetDependency */,
+			);
+			name = "Juicin WatchKit App";
+			productName = "Juicin WatchKit App";
+			productReference = AA5365062467AEA400CDDDEC /* Juicin'.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AA5365142467AEA500CDDDEC /* Juicin WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA53652F2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin WatchKit Extension" */;
+			buildPhases = (
+				AA5365112467AEA500CDDDEC /* Sources */,
+				AA5365122467AEA500CDDDEC /* Frameworks */,
+				AA5365132467AEA500CDDDEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Juicin WatchKit Extension";
+			productName = "Juicin WatchKit Extension";
+			productReference = AA5365152467AEA500CDDDEC /* Juicin'.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5364D42467AEA300CDDDEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Brianna Zamora";
+				TargetAttributes = {
+					AA5364DB2467AEA300CDDDEC = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AA5364F12467AEA400CDDDEC = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = AA5364DB2467AEA300CDDDEC;
+					};
+					AA5364FC2467AEA400CDDDEC = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = AA5364DB2467AEA300CDDDEC;
+					};
+					AA5365052467AEA400CDDDEC = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AA5365142467AEA500CDDDEC = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AA5364D72467AEA300CDDDEC /* Build configuration list for PBXProject "Juicin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5364D32467AEA300CDDDEC;
+			productRefGroup = AA5364DD2467AEA300CDDDEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5364DB2467AEA300CDDDEC /* Juicin */,
+				AA5364F12467AEA400CDDDEC /* JuicinTests */,
+				AA5364FC2467AEA400CDDDEC /* JuicinUITests */,
+				AA5365052467AEA400CDDDEC /* Juicin WatchKit App */,
+				AA5365142467AEA500CDDDEC /* Juicin WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5364DA2467AEA300CDDDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5364EC2467AEA400CDDDEC /* LaunchScreen.storyboard in Resources */,
+				AA10E2AF24680E8F00AA261D /* Assets.xcassets in Resources */,
+				AA5364E92467AEA400CDDDEC /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364F02467AEA400CDDDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364FB2467AEA400CDDDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5365042467AEA400CDDDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10E2B024680E8F00AA261D /* Assets.xcassets in Resources */,
+				AA53659D2467B02B00CDDDEC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5365132467AEA500CDDDEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10E2B124680E8F00AA261D /* Assets.xcassets in Resources */,
+				AA53652A2467AEA500CDDDEC /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5364D82467AEA300CDDDEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE3675D2467E8B300E48E20 /* ListButtonStyle.swift in Sources */,
+				AA5364E02467AEA300CDDDEC /* AppDelegate.swift in Sources */,
+				AA5365882467AFF900CDDDEC /* ShoppingListView.swift in Sources */,
+				AA5365822467AFF900CDDDEC /* ProduceRow.swift in Sources */,
+				AA5364E22467AEA300CDDDEC /* SceneDelegate.swift in Sources */,
+				AA5364E42467AEA300CDDDEC /* ContentView.swift in Sources */,
+				AA53658C2467AFF900CDDDEC /* AdaptsToKeyboard.swift in Sources */,
+				AA5365842467AFF900CDDDEC /* JuiceView.swift in Sources */,
+				AA5365862467AFF900CDDDEC /* JuiceListView.swift in Sources */,
+				AA53658E2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */,
+				AA5365902467AFF900CDDDEC /* Produce.swift in Sources */,
+				AA5365922467AFF900CDDDEC /* Juice.swift in Sources */,
+				AA5365942467AFF900CDDDEC /* Model.xcdatamodeld in Sources */,
+				AA53658A2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */,
+				AA5365972467B00500CDDDEC /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364EE2467AEA400CDDDEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5364F72467AEA400CDDDEC /* JuicinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5364F92467AEA400CDDDEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5365022467AEA400CDDDEC /* JuicinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA5365112467AEA500CDDDEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5365912467AFF900CDDDEC /* Produce.swift in Sources */,
+				AA53659B2467B01400CDDDEC /* JuiceListHostingController.swift in Sources */,
+				AA5365932467AFF900CDDDEC /* Juice.swift in Sources */,
+				AA5365212467AEA500CDDDEC /* NotificationController.swift in Sources */,
+				AA53651F2467AEA500CDDDEC /* ExtensionDelegate.swift in Sources */,
+				AA53658B2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */,
+				AA5365892467AFF900CDDDEC /* ShoppingListView.swift in Sources */,
+				AA5365232467AEA500CDDDEC /* NotificationView.swift in Sources */,
+				AA5365952467AFF900CDDDEC /* Model.xcdatamodeld in Sources */,
+				AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */,
+				AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */,
+				AA5365252467AEA500CDDDEC /* ComplicationController.swift in Sources */,
+				AA5365832467AFF900CDDDEC /* ProduceRow.swift in Sources */,
+				AA5365872467AFF900CDDDEC /* JuiceListView.swift in Sources */,
+				AA53658F2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA5364F42467AEA400CDDDEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5364DB2467AEA300CDDDEC /* Juicin */;
+			targetProxy = AA5364F32467AEA400CDDDEC /* PBXContainerItemProxy */;
+		};
+		AA5364FF2467AEA400CDDDEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5364DB2467AEA300CDDDEC /* Juicin */;
+			targetProxy = AA5364FE2467AEA400CDDDEC /* PBXContainerItemProxy */;
+		};
+		AA5365092467AEA400CDDDEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = AA5365052467AEA400CDDDEC /* Juicin WatchKit App */;
+			targetProxy = AA5365082467AEA400CDDDEC /* PBXContainerItemProxy */;
+		};
+		AA5365182467AEA500CDDDEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA5365142467AEA500CDDDEC /* Juicin WatchKit Extension */;
+			targetProxy = AA5365172467AEA500CDDDEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA5364EA2467AEA400CDDDEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5364EB2467AEA400CDDDEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA53652D2467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA53652E2467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5365302467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Juicin WatchKit Extension/Juicin WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Juicin WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Juicin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Juicin'";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AA5365312467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Juicin WatchKit Extension/Juicin WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Juicin WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Juicin WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Juicin'";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		AA5365342467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				IBSC_MODULE = Juicin_WatchKit_Extension;
+				INFOPLIST_FILE = "Juicin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin.watchkitapp;
+				PRODUCT_NAME = "Juicin'";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AA5365352467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				IBSC_MODULE = Juicin_WatchKit_Extension;
+				INFOPLIST_FILE = "Juicin WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin.watchkitapp;
+				PRODUCT_NAME = "Juicin'";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		AA5365382467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Juicin/Juicin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Juicin/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Juicin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin;
+				PRODUCT_NAME = "Juicin'";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA5365392467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Juicin/Juicin.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Juicin/Preview Content\"";
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Juicin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.Juicin;
+				PRODUCT_NAME = "Juicin'";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA53653B2467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				INFOPLIST_FILE = JuicinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.JuicinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Juicin.app/Juicin";
+			};
+			name = Debug;
+		};
+		AA53653C2467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				INFOPLIST_FILE = JuicinTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.JuicinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Juicin.app/Juicin";
+			};
+			name = Release;
+		};
+		AA53653E2467AEA600CDDDEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				INFOPLIST_FILE = JuicinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.JuicinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Juicin;
+			};
+			name = Debug;
+		};
+		AA53653F2467AEA600CDDDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35W56JPP75;
+				INFOPLIST_FILE = JuicinUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.briannazamora.JuicinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Juicin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5364D72467AEA300CDDDEC /* Build configuration list for PBXProject "Juicin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA53652D2467AEA600CDDDEC /* Debug */,
+				AA53652E2467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA53652F2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5365302467AEA600CDDDEC /* Debug */,
+				AA5365312467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5365332467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5365342467AEA600CDDDEC /* Debug */,
+				AA5365352467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5365372467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "Juicin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5365382467AEA600CDDDEC /* Debug */,
+				AA5365392467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA53653A2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "JuicinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA53653B2467AEA600CDDDEC /* Debug */,
+				AA53653C2467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA53653D2467AEA600CDDDEC /* Build configuration list for PBXNativeTarget "JuicinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA53653E2467AEA600CDDDEC /* Debug */,
+				AA53653F2467AEA600CDDDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA5365812467AFF800CDDDEC /* Model.xcdatamodel */,
+			);
+			currentVersion = AA5365812467AFF800CDDDEC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA5364D42467AEA300CDDDEC /* Project object */;
+}
