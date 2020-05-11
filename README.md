@@ -1,5 +1,5 @@
 # Juicin
 
-![Juicin Icon](https://raw.githubusercontent.com/bornbrie/Juicin/master/Juicin/Assets.xcassets/AppIcon.appiconset/Juicin-512.png?token=ABLS3T2H22BRIKMUQGQOOCK6XBWAK)
+![Juicin Icon](https://github.com/bornbrie/Juicin/blob/master/Juicin/Assets.xcassets/AppIcon.appiconset/Juicin-256.png?raw=true)
 
 A simple app to track your juicing journey.
