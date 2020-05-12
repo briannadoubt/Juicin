@@ -31,7 +31,10 @@ struct AdaptsToKeyboard: ViewModifier {
                             notification.userInfo?["UIKeyboardFrameEndUserInfoKey"] as? CGRect
                     }
                     .map { rect in
-                        rect.height - geometry.safeAreaInsets.bottom - 44
+                        // This terrible solution coming at you from 44 pixels away ;)
+                        // The view's don't render in line with this around a tab bar.
+                        let tabBarHeight: CGFloat = 44
+                        return rect.height - geometry.safeAreaInsets.bottom - tabBarHeight
                     }
                     .subscribe(Subscribers.Assign(object: self, keyPath: \.currentHeight))
 

@@ -13,13 +13,7 @@ struct JuiceView: View {
     
     @Environment(\.managedObjectContext) var context
     
-    @ObservedObject var juice: Juice {
-        willSet {
-            if self.juice.name.isEmpty {
-                self.isEditing = true
-            }
-        }
-    }
+    @ObservedObject var juice: Juice
     
     private var produceFetchRequest: FetchRequest<Produce>
     
@@ -35,11 +29,9 @@ struct JuiceView: View {
             ],
             predicate: NSPredicate(format: "juice = %@", juice.id)
         )
-        isEditing = juice.name.isEmpty
     }
     
     @State var showColors = false
-    @State var isEditing: Bool = false
     
     func addProduce() {
         let newProduce = Produce(context: context)
@@ -78,8 +70,8 @@ struct JuiceView: View {
     }
     
     func toggleIsEditing() {
-        isEditing = !isEditing
-        if isEditing == false {
+        juice.isEditing = !juice.isEditing
+        if juice.isEditing == false {
             try? context.save()
         }
     }
@@ -100,7 +92,7 @@ struct JuiceView: View {
                             }
                         }
                         TextField("", text: $juice.name)
-                            .disabled(!isEditing)
+                            .disabled(!juice.isEditing)
                             .font(.headline)
                             .padding()
                             .lineLimit(0)
@@ -109,21 +101,27 @@ struct JuiceView: View {
                     }
                     #if !os(watchOS)
                     Button(action: toggleIsEditing) {
-                        Text(self.isEditing ? "Done" : "Edit")
+                        Text(self.juice.isEditing ? "Done" : "Edit")
                     }.padding().buttonStyle(BorderlessButtonStyle()).foregroundColor(.white)
                     #else
                     Button(action: toggleIsEditing) {
-                        Text(self.isEditing ? "Done" : "Edit")
+                        Text(self.juice.isEditing ? "Done" : "Edit")
                     }.padding().foregroundColor(.white)
                     #endif
                 }
             }
             
             ForEach(produceFetchRequest.wrappedValue, id: \.self) { produce in
-                ProduceRow(produce: produce, isEditing: self.$isEditing)
+                VStack {
+                    if !self.juice.isEditing && self.juice.name != "" {
+                        ProduceRow(produce: produce, isEditing: self.$juice.isEditing)
+                    } else {
+                        ProduceRow(produce: produce, isEditing: self.$juice.isEditing)
+                    }
+                }
             }
             
-            if isEditing {
+            if juice.isEditing {
                 HStack {
                     Spacer()
                     #if !os(watchOS)
@@ -228,10 +226,10 @@ struct JuiceView: View {
             Spacer()
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 20)
                 .stroke(JuiceColor(rawValue: juice.color)?.color ?? Color.white, lineWidth: 2)
         )
-        .cornerRadius(10)
+        .cornerRadius(20)
         .animation(.easeInOut(duration: 0.3))
         .accentColor(JuiceColor(rawValue: juice.color)?.color ?? Color.white)
     }

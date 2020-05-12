@@ -10,26 +10,6 @@ import Foundation
 import CoreData
 import SwiftUI
 
-enum JuiceColor: String, CaseIterable {
-    case red
-    case green
-    case purple
-    case orange
-    
-    var color: Color {
-        switch self {
-        case .green:
-            return Color.green
-        case .orange:
-            return Color.orange
-        case .purple:
-            return Color.purple
-        case .red:
-            return Color.red
-        }
-    }
-}
-
 @objc(Juice)
 class Juice: NSManagedObject, Codable {
     
@@ -41,6 +21,7 @@ class Juice: NSManagedObject, Codable {
         case color
         case createdAt
         case updatedAt
+        case isEditing
     }
     
     @NSManaged var id: String
@@ -48,6 +29,7 @@ class Juice: NSManagedObject, Codable {
     @NSManaged var color: String
     @NSManaged var createdAt: Date
     @NSManaged var updatedAt: Date
+    @NSManaged var isEditing: Bool
     
     required convenience init(from decoder: Decoder) throws {
         
@@ -68,6 +50,7 @@ class Juice: NSManagedObject, Codable {
         self.color = try container.decode(String.self, forKey: .color)
         self.createdAt = try container.decode(Date.self, forKey: .createdAt)
         self.updatedAt = try container.decode(Date.self, forKey: .updatedAt)
+        self.isEditing = try container.decode(Bool.self, forKey: .isEditing)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -79,5 +62,6 @@ class Juice: NSManagedObject, Codable {
         try container.encode(color, forKey: .color)
         try container.encode(createdAt, forKey: .createdAt)
         try container.encode(updatedAt, forKey: .updatedAt)
+        try container.encode(isEditing, forKey: .isEditing)
     }
 }

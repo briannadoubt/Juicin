@@ -25,6 +25,7 @@ struct JuiceListView: View {
     
     func addJuice() {
         let newJuice = Juice(context: context)
+        newJuice.isEditing = true
         newJuice.id = UUID().uuidString
         newJuice.name = ""
         newJuice.createdAt = Date()
@@ -55,8 +56,11 @@ struct JuiceListView: View {
                         Text("Add Juice")
                     }
                 }
-                ForEach(juices, id: \.self) { juice in
-                    JuiceView(juice)
+                ForEach(self.juices, id: \.self) { juice in
+                    VStack {
+                        JuiceView(juice)
+                        Spacer()
+                    }
                 }
                 .onDelete(perform: delete(at:))
             }

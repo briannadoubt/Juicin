@@ -95,7 +95,7 @@ struct ShoppingListView: View {
                 }
             }
             .navigationBarTitle("Shopping List")
-            .navigationBarItems(trailing: EditButton())
+    .navigationBarItems(trailing: EditButton().animation(.easeInOut))
         }
     }
     #else
