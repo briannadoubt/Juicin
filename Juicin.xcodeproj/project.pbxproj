@@ -49,6 +49,10 @@
 		AA53659D2467B02B00CDDDEC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53659C2467B02B00CDDDEC /* Interface.storyboard */; };
 		AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365742467AFF800CDDDEC /* JuiceView.swift */; };
 		AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365962467B00400CDDDEC /* Extensions.swift */; };
+		AADDF3702468AA000043C6CC /* JuicingJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF36F2468AA000043C6CC /* JuicingJourney.swift */; };
+		AADDF3712468AA000043C6CC /* JuicingJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF36F2468AA000043C6CC /* JuicingJourney.swift */; };
+		AADDF3732468AA210043C6CC /* JuiceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF3722468AA210043C6CC /* JuiceColor.swift */; };
+		AADDF3742468AA210043C6CC /* JuiceColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF3722468AA210043C6CC /* JuiceColor.swift */; };
 		AAE3675D2467E8B300E48E20 /* ListButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +154,8 @@
 		AA5365962467B00400CDDDEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceListHostingController.swift; sourceTree = "<group>"; };
 		AA53659C2467B02B00CDDDEC /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		AADDF36F2468AA000043C6CC /* JuicingJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicingJourney.swift; sourceTree = "<group>"; };
+		AADDF3722468AA210043C6CC /* JuiceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceColor.swift; sourceTree = "<group>"; };
 		AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,7 +347,9 @@
 			children = (
 				AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */,
 				AA53657E2467AFF800CDDDEC /* Produce.swift */,
+				AADDF36F2468AA000043C6CC /* JuicingJourney.swift */,
 				AA53657F2467AFF800CDDDEC /* Juice.swift */,
+				AADDF3722468AA210043C6CC /* JuiceColor.swift */,
 				AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -544,11 +552,13 @@
 				AA5364E02467AEA300CDDDEC /* AppDelegate.swift in Sources */,
 				AA5365882467AFF900CDDDEC /* ShoppingListView.swift in Sources */,
 				AA5365822467AFF900CDDDEC /* ProduceRow.swift in Sources */,
+				AADDF3732468AA210043C6CC /* JuiceColor.swift in Sources */,
 				AA5364E22467AEA300CDDDEC /* SceneDelegate.swift in Sources */,
 				AA5364E42467AEA300CDDDEC /* ContentView.swift in Sources */,
 				AA53658C2467AFF900CDDDEC /* AdaptsToKeyboard.swift in Sources */,
 				AA5365842467AFF900CDDDEC /* JuiceView.swift in Sources */,
 				AA5365862467AFF900CDDDEC /* JuiceListView.swift in Sources */,
+				AADDF3702468AA000043C6CC /* JuicingJourney.swift in Sources */,
 				AA53658E2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */,
 				AA5365902467AFF900CDDDEC /* Produce.swift in Sources */,
 				AA5365922467AFF900CDDDEC /* Juice.swift in Sources */,
@@ -582,11 +592,13 @@
 				AA53659B2467B01400CDDDEC /* JuiceListHostingController.swift in Sources */,
 				AA5365932467AFF900CDDDEC /* Juice.swift in Sources */,
 				AA5365212467AEA500CDDDEC /* NotificationController.swift in Sources */,
+				AADDF3742468AA210043C6CC /* JuiceColor.swift in Sources */,
 				AA53651F2467AEA500CDDDEC /* ExtensionDelegate.swift in Sources */,
 				AA53658B2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */,
 				AA5365892467AFF900CDDDEC /* ShoppingListView.swift in Sources */,
 				AA5365232467AEA500CDDDEC /* NotificationView.swift in Sources */,
 				AA5365952467AFF900CDDDEC /* Model.xcdatamodeld in Sources */,
+				AADDF3712468AA000043C6CC /* JuicingJourney.swift in Sources */,
 				AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */,
 				AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */,
 				AA5365252467AEA500CDDDEC /* ComplicationController.swift in Sources */,
