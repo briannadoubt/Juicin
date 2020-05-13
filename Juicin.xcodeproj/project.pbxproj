@@ -26,8 +26,8 @@
 		AA53652A2467AEA500CDDDEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5365292467AEA500CDDDEC /* Preview Assets.xcassets */; };
 		AA5365432467AED900CDDDEC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5365422467AED900CDDDEC /* CloudKit.framework */; };
 		AA5365462467AEF500CDDDEC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5365452467AEF500CDDDEC /* CloudKit.framework */; };
-		AA5365822467AFF900CDDDEC /* ProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* ProduceRow.swift */; };
-		AA5365832467AFF900CDDDEC /* ProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* ProduceRow.swift */; };
+		AA5365822467AFF900CDDDEC /* JuiceProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* JuiceProduceRow.swift */; };
+		AA5365832467AFF900CDDDEC /* JuiceProduceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365732467AFF800CDDDEC /* JuiceProduceRow.swift */; };
 		AA5365842467AFF900CDDDEC /* JuiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365742467AFF800CDDDEC /* JuiceView.swift */; };
 		AA5365862467AFF900CDDDEC /* JuiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365752467AFF800CDDDEC /* JuiceListView.swift */; };
 		AA5365872467AFF900CDDDEC /* JuiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365752467AFF800CDDDEC /* JuiceListView.swift */; };
@@ -47,6 +47,12 @@
 		AA5365972467B00500CDDDEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365962467B00400CDDDEC /* Extensions.swift */; };
 		AA53659B2467B01400CDDDEC /* JuiceListHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */; };
 		AA53659D2467B02B00CDDDEC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53659C2467B02B00CDDDEC /* Interface.storyboard */; };
+		AA58E608246B905F000AA109 /* JuiceControlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E607246B905F000AA109 /* JuiceControlBarView.swift */; };
+		AA58E60A246B911F000AA109 /* JuiceColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E609246B911F000AA109 /* JuiceColorPickerView.swift */; };
+		AA58E60C246B98F8000AA109 /* JuiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E60B246B98F8000AA109 /* JuiceHeaderView.swift */; };
+		AA58E60D246B98F8000AA109 /* JuiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E60B246B98F8000AA109 /* JuiceHeaderView.swift */; };
+		AA58E60F246B9AF3000AA109 /* AllProduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E60E246B9AF3000AA109 /* AllProduceView.swift */; };
+		AA58E610246B9AF3000AA109 /* AllProduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA58E60E246B9AF3000AA109 /* AllProduceView.swift */; };
 		AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365742467AFF800CDDDEC /* JuiceView.swift */; };
 		AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5365962467B00400CDDDEC /* Extensions.swift */; };
 		AADDF3702468AA000043C6CC /* JuicingJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADDF36F2468AA000043C6CC /* JuicingJourney.swift */; };
@@ -141,7 +147,7 @@
 		AA5365422467AED900CDDDEC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AA5365442467AEF200CDDDEC /* Juicin WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Juicin WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		AA5365452467AEF500CDDDEC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		AA5365732467AFF800CDDDEC /* ProduceRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProduceRow.swift; sourceTree = "<group>"; };
+		AA5365732467AFF800CDDDEC /* JuiceProduceRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceProduceRow.swift; sourceTree = "<group>"; };
 		AA5365742467AFF800CDDDEC /* JuiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceView.swift; sourceTree = "<group>"; };
 		AA5365752467AFF800CDDDEC /* JuiceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceListView.swift; sourceTree = "<group>"; };
 		AA5365772467AFF800CDDDEC /* ShoppingListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
@@ -154,6 +160,10 @@
 		AA5365962467B00400CDDDEC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AA5365992467B01300CDDDEC /* JuiceListHostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceListHostingController.swift; sourceTree = "<group>"; };
 		AA53659C2467B02B00CDDDEC /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		AA58E607246B905F000AA109 /* JuiceControlBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceControlBarView.swift; sourceTree = "<group>"; };
+		AA58E609246B911F000AA109 /* JuiceColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceColorPickerView.swift; sourceTree = "<group>"; };
+		AA58E60B246B98F8000AA109 /* JuiceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceHeaderView.swift; sourceTree = "<group>"; };
+		AA58E60E246B9AF3000AA109 /* AllProduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProduceView.swift; sourceTree = "<group>"; };
 		AADDF36F2468AA000043C6CC /* JuicingJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuicingJourney.swift; sourceTree = "<group>"; };
 		AADDF3722468AA210043C6CC /* JuiceColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuiceColor.swift; sourceTree = "<group>"; };
 		AAE3675C2467E8B300E48E20 /* ListButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListButtonStyle.swift; sourceTree = "<group>"; };
@@ -309,6 +319,7 @@
 			children = (
 				AA5365762467AFF800CDDDEC /* ShoppingList */,
 				AA5365722467AFF800CDDDEC /* Juice */,
+				AA58E611246B9B02000AA109 /* Produce */,
 				AA53657A2467AFF800CDDDEC /* ViewModifiers */,
 			);
 			path = View;
@@ -319,7 +330,10 @@
 			children = (
 				AA5365752467AFF800CDDDEC /* JuiceListView.swift */,
 				AA5365742467AFF800CDDDEC /* JuiceView.swift */,
-				AA5365732467AFF800CDDDEC /* ProduceRow.swift */,
+				AA58E60B246B98F8000AA109 /* JuiceHeaderView.swift */,
+				AA58E607246B905F000AA109 /* JuiceControlBarView.swift */,
+				AA58E609246B911F000AA109 /* JuiceColorPickerView.swift */,
+				AA5365732467AFF800CDDDEC /* JuiceProduceRow.swift */,
 			);
 			path = Juice;
 			sourceTree = "<group>";
@@ -347,12 +361,20 @@
 			children = (
 				AA53657D2467AFF800CDDDEC /* ShoppingListItem.swift */,
 				AA53657E2467AFF800CDDDEC /* Produce.swift */,
-				AADDF36F2468AA000043C6CC /* JuicingJourney.swift */,
 				AA53657F2467AFF800CDDDEC /* Juice.swift */,
+				AADDF36F2468AA000043C6CC /* JuicingJourney.swift */,
 				AADDF3722468AA210043C6CC /* JuiceColor.swift */,
 				AA5365802467AFF800CDDDEC /* Model.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AA58E611246B9B02000AA109 /* Produce */ = {
+			isa = PBXGroup;
+			children = (
+				AA58E60E246B9AF3000AA109 /* AllProduceView.swift */,
+			);
+			path = Produce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -551,19 +573,23 @@
 				AAE3675D2467E8B300E48E20 /* ListButtonStyle.swift in Sources */,
 				AA5364E02467AEA300CDDDEC /* AppDelegate.swift in Sources */,
 				AA5365882467AFF900CDDDEC /* ShoppingListView.swift in Sources */,
-				AA5365822467AFF900CDDDEC /* ProduceRow.swift in Sources */,
+				AA5365822467AFF900CDDDEC /* JuiceProduceRow.swift in Sources */,
 				AADDF3732468AA210043C6CC /* JuiceColor.swift in Sources */,
 				AA5364E22467AEA300CDDDEC /* SceneDelegate.swift in Sources */,
 				AA5364E42467AEA300CDDDEC /* ContentView.swift in Sources */,
 				AA53658C2467AFF900CDDDEC /* AdaptsToKeyboard.swift in Sources */,
+				AA58E60F246B9AF3000AA109 /* AllProduceView.swift in Sources */,
 				AA5365842467AFF900CDDDEC /* JuiceView.swift in Sources */,
 				AA5365862467AFF900CDDDEC /* JuiceListView.swift in Sources */,
 				AADDF3702468AA000043C6CC /* JuicingJourney.swift in Sources */,
 				AA53658E2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */,
 				AA5365902467AFF900CDDDEC /* Produce.swift in Sources */,
+				AA58E608246B905F000AA109 /* JuiceControlBarView.swift in Sources */,
 				AA5365922467AFF900CDDDEC /* Juice.swift in Sources */,
 				AA5365942467AFF900CDDDEC /* Model.xcdatamodeld in Sources */,
+				AA58E60C246B98F8000AA109 /* JuiceHeaderView.swift in Sources */,
 				AA53658A2467AFF900CDDDEC /* ShoppingListItemRow.swift in Sources */,
+				AA58E60A246B911F000AA109 /* JuiceColorPickerView.swift in Sources */,
 				AA5365972467B00500CDDDEC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,7 +614,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA58E60D246B98F8000AA109 /* JuiceHeaderView.swift in Sources */,
 				AA5365912467AFF900CDDDEC /* Produce.swift in Sources */,
+				AA58E610246B9AF3000AA109 /* AllProduceView.swift in Sources */,
 				AA53659B2467B01400CDDDEC /* JuiceListHostingController.swift in Sources */,
 				AA5365932467AFF900CDDDEC /* Juice.swift in Sources */,
 				AA5365212467AEA500CDDDEC /* NotificationController.swift in Sources */,
@@ -602,7 +630,7 @@
 				AA797D2A2467DC5700663BEC /* JuiceView.swift in Sources */,
 				AA797D2B2467E50E00663BEC /* Extensions.swift in Sources */,
 				AA5365252467AEA500CDDDEC /* ComplicationController.swift in Sources */,
-				AA5365832467AFF900CDDDEC /* ProduceRow.swift in Sources */,
+				AA5365832467AFF900CDDDEC /* JuiceProduceRow.swift in Sources */,
 				AA5365872467AFF900CDDDEC /* JuiceListView.swift in Sources */,
 				AA53658F2467AFF900CDDDEC /* ShoppingListItem.swift in Sources */,
 			);

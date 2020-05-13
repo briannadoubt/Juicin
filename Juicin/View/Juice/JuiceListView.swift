@@ -58,7 +58,7 @@ struct JuiceListView: View {
                 }
                 ForEach(self.juices, id: \.self) { juice in
                     VStack {
-                        JuiceView(juice)
+                        JuiceView(juice: juice)
                         Spacer()
                     }
                 }
@@ -77,7 +77,7 @@ struct JuiceListView: View {
                 }
             }
             ForEach(juices, id: \.self) { juice in
-                JuiceView(juice)
+        JuiceView(juice: juice)
             }.onDelete(perform: delete(at:))
         }
     }

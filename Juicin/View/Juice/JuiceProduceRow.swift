@@ -1,5 +1,5 @@
 //
-//  ProduceRow.swift
+//  JuiceProduceRow.swift
 //  Juicies
 //
 //  Created by Brianna Lee on 5/7/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ProduceRow: View {
+struct JuiceProduceRow: View {
     
     @Environment(\.managedObjectContext) var context
     
@@ -70,14 +70,14 @@ struct ProduceView_Previews: PreviewProvider {
     struct Editing: View {
         @State var isEditing = true
         var body: some View {
-            ProduceRow(produce: Produce(), isEditing: $isEditing)
+            JuiceProduceRow(produce: Produce(), isEditing: $isEditing)
         }
     }
     
     struct NotEditing: View {
         @State var isEditing = false
         var body: some View {
-            ProduceRow(produce: Produce(), isEditing: $isEditing)
+            JuiceProduceRow(produce: Produce(), isEditing: $isEditing)
         }
     }
     

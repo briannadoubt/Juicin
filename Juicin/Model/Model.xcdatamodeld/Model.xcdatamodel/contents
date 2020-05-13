@@ -4,17 +4,18 @@
         <attribute name="color" attributeType="String"/>
         <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="String" defaultValueString=""/>
-        <attribute name="isEditing" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="isEditing" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
         <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="produce" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Produce" inverseName="juice" inverseEntity="Produce"/>
     </entity>
     <entity name="Produce" representedClassName=".Produce" syncable="YES">
         <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="String" defaultValueString=""/>
-        <attribute name="juice" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String" defaultValueString=""/>
         <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="juice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Juice" inverseName="produce" inverseEntity="Juice"/>
     </entity>
     <entity name="ShoppingListItem" representedClassName=".ShoppingListItem" syncable="YES">
         <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
@@ -25,7 +26,7 @@
         <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="Juice" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Juice" positionX="-63" positionY="-18" width="128" height="148"/>
         <element name="Produce" positionX="-54" positionY="-9" width="128" height="133"/>
         <element name="ShoppingListItem" positionX="-36" positionY="9" width="128" height="133"/>
     </elements>

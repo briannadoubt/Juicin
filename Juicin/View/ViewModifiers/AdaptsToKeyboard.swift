@@ -33,6 +33,7 @@ struct AdaptsToKeyboard: ViewModifier {
                     .map { rect in
                         // This terrible solution coming at you from 44 pixels away ;)
                         // The view's don't render in line with this around a tab bar.
+                        // Maybe we can cover the tab view with a floating keyboard button bar.
                         let tabBarHeight: CGFloat = 44
                         return rect.height - geometry.safeAreaInsets.bottom - tabBarHeight
                     }
